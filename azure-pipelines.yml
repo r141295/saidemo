@@ -13,11 +13,6 @@ steps:
 - task: Maven@3
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Free Trial(c8d97242-081c-4590-bb1b-f16d5b3c9d3a)'
-    appType: 'webAppLinux'
-    appName: 'YNSaiYadav'
-    package: '$(System.DefaultWorkingDirectory)/**/*.war'
-  inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
